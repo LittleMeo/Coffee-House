@@ -1,5 +1,7 @@
 body {
+    max-width: 1440px;
     background-color: #E1D4C9;
+    margin: 0 auto;
 }
 
 a {
@@ -16,12 +18,13 @@ li {
 }
 
 .header {
-    margin: 40px 20px;
+    margin: 20px 20px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
+    margin: 0 20px;
 }
 
 .nav-list {
@@ -35,11 +38,20 @@ li {
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
-    color: #333333;
+    color: #403F3D;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #403F3D;
+}
+
+.menu-ico {
+    margin: 0px 0 5px 0;
 }
