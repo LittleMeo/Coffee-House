@@ -14,6 +14,11 @@ button {
     background: none;
     cursor: pointer;
     padding: 0;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    background-color: #E1D4C9;
 }
 
 a {
@@ -86,17 +91,21 @@ li {
 .hero {
     background-image: url('./assets/png/img-hero.png');
     padding: 100px;
+    border-radius: 20px;
 }
 
 .hero-container{
     width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .hero-title {
     font-family: Inter;
-    font-size: 42px;
+    font-size: 72px;
     font-weight: 600;
-    line-height: 115%;
+    line-height: 105%;
     color: #E1D4C9;
 }
 
@@ -111,4 +120,8 @@ li {
     font-weight: 400;
     line-height: 150%;
     color: #E1D4C9;
+}
+
+.hero-button {
+    border-radius: 20px;
 }
