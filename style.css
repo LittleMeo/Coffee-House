@@ -99,6 +99,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .hero-title {
