@@ -94,6 +94,26 @@ li {
     margin: 0px 0 5px 0;
 }
 
+.nav-burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #403F3D;
+}
+
+.burger-line::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #403F3D;
+    margin: 5px 0;
+}
+
 .hero {
     background-image: url('./assets/png/img-hero.png');
     padding: 100px;
@@ -133,4 +153,21 @@ li {
 
 .hero-button {
     background-color: #E1D4C9;
+}
+
+@media (max-width: 770px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-burger {
+        display: flex;
+        border: 1px solid #403F3D;
+        align-items: center;
+        border-radius: 50%;
+        padding: 18px;
+    }
+    
 }
