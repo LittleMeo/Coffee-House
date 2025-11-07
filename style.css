@@ -182,3 +182,22 @@ li {
         padding: 100px 60px;
     }
 }
+
+@media (max-width: 400px) {
+    .section {
+        margin: 0 16px;
+    }
+
+    .hero {
+        padding: 60px 16px;
+    }
+
+    .hero-container {
+        width: 320px;
+    }
+
+    .hero-title {
+        font-size: 42px;
+        line-height: 115%;
+    }
+}
