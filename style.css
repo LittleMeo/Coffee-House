@@ -26,7 +26,6 @@ button {
     line-height: 150%;
     background-color: transparent;
     border-radius: 40px;
-    padding: 20px;
 }
 
 a {
@@ -40,6 +39,11 @@ ul {
 
 li {
     list-style: none;
+}
+
+.italic-text {
+    font-style: italic;
+    color: #B0907A;
 }
 
 .section {
@@ -143,11 +147,6 @@ li {
     color: #E1D4C9;
 }
 
-.h1-accent {
-    font-style: italic;
-    color: #B0907A;
-}
-
 .hero-subtitle {
     font-family: Inter;
     font-size: 16px;
@@ -159,6 +158,13 @@ li {
 
 .hero-button {
     background-color: #E1D4C9;
+    padding: 20px;
+}
+
+.favorite__btn {
+    width: 25px;
+    height: 1.5px;
+    background-color: #403F3D;
 }
 
 @media (max-width: 786px) {
