@@ -350,4 +350,10 @@ li {
         font-size: 42px;
         line-height: 115%;
     }
+    .favorite__border{
+        display: none;
+    }
+    .favorite__btn--prev, .favorite__btn--next{
+        display: none;
+    }
 }
