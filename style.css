@@ -311,6 +311,11 @@ li {
     background-color: #403F3D;
 }
 
+.about__container {
+    display: flex;
+    gap: 10px;
+}
+
 @media (max-width: 786px) {
     .nav-list {
         display: none;
@@ -350,10 +355,13 @@ li {
         font-size: 42px;
         line-height: 115%;
     }
-    .favorite__border{
+
+    .favorite__border {
         display: none;
     }
-    .favorite__btn--prev, .favorite__btn--next{
+
+    .favorite__btn--prev,
+    .favorite__btn--next {
         display: none;
     }
 }
