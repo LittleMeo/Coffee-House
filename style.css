@@ -314,7 +314,37 @@ li {
 .about__container {
     display: flex;
     gap: 10px;
+    margin: 40px 0 0 0;
 }
+
+.about__title {
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 1.58px;
+    color: #403F3D;
+}
+
+.about__img-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.about__img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.about__img:nth-child(2),
+.about__img:nth-child(3) {
+    height: 50%;
+}
+
 
 @media (max-width: 786px) {
     .nav-list {
