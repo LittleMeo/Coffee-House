@@ -320,7 +320,7 @@ li {
     font-size: 60px;
     font-weight: 600;
     line-height: 125%;
-    letter-spacing: 1.58px;
+    letter-spacing: 2.04px;
     color: #403F3D;
 }
 
@@ -337,21 +337,24 @@ li {
 }
 
 .about__img {
-    width: 680px;
+    width: 718px;
     object-fit: cover;
     display: block;
-    position: absolute;
-    bottom: -38px;
-    left: -17px;
-}
-
-/* .about__img--big {
-    height: 590px;
 }
 
 .about__img--small {
-    height: 430px;
-} */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about__img--big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .about__img-wrapper--big {
     width: 660px;
