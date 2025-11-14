@@ -433,6 +433,16 @@ li {
         line-height: 115%;
     }
 
+    .favorite-container {
+        margin: 100px 0;
+    }
+
+    .favorite__title {
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: 1.1px;
+    }
+
     .favorite__border {
         display: none;
     }
@@ -443,7 +453,11 @@ li {
     }
 
     .favorite__slider {
-        margin: 30px 0;
+       margin: 40px 0;
+    }
+
+    .card__description{
+        letter-spacing: 0px;
     }
 
     .about__title {
