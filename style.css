@@ -392,6 +392,27 @@ li {
     .hero {
         padding: 100px 60px;
     }
+
+    .about__title {
+        letter-spacing: 1.70px;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about__img-wrapper--small {
+        display: none;
+    }
+
+    .about__img-wrapper--big {
+        width: 688px;
+        height: 588px;
+    }
+
+    .about__img--small {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
