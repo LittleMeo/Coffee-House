@@ -73,17 +73,17 @@ li {
     margin: 0 20px;
 }
 
-.nav-logo {
+.nav__logo {
     cursor: pointer;
 }
 
-.nav-list {
+.nav__list {
     align-items: center;
     display: flex;
     gap: 40px;
 }
 
-.nav-link {
+.nav__link {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
@@ -91,12 +91,12 @@ li {
     color: #403F3D;
 }
 
-.nav-link:hover {
+.nav__link:hover {
     text-decoration-line: underline;
     transition: 0.3s;
 }
 
-.nav-menu {
+.nav__menu {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -108,30 +108,30 @@ li {
     cursor: pointer;
 }
 
-.nav-menu:hover {
+.nav__menu:hover {
     text-decoration-line: underline;
     transition: 0.3s;
 }
 
-.menu-ico {
+.menu__ico {
     margin: 0px 0 5px 0;
 }
 
-.nav-burger {
+.nav__burger {
     display: none;
     cursor: pointer;
 }
 
-.burger-line {
-    width: 25px;
+.burger__line {
+    width: 16px;
     height: 1.5px;
     background-color: #403F3D;
 }
 
-.burger-line::after {
+.burger__line::after {
     content: '';
     display: block;
-    width: 25px;
+    width: 16px;
     height: 1.5px;
     background-color: #403F3D;
     margin: 8px 0;
@@ -386,7 +386,7 @@ li {
         border: 1px solid #403F3D;
         align-items: center;
         border-radius: 50%;
-        padding: 18px;
+        padding: 18px 14px;
     }
 
     .hero {
@@ -417,7 +417,7 @@ li {
 
 @media (max-width: 400px) {
     .section {
-        margin: 0 16px;
+        margin: 0 14px;
     }
 
     .header {
