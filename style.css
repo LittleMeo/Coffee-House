@@ -210,7 +210,7 @@ li {
 
 .favorite__btn--prev {
     position: relative;
-    width: 25px;
+    width: 16px;
     height: 1px;
     background-color: #403F3D;
 }
@@ -239,7 +239,7 @@ li {
 
 .favorite__btn--next {
     position: relative;
-    width: 25px;
+    width: 16px;
     height: 1px;
     background-color: #403F3D;
 }
@@ -410,6 +410,10 @@ li {
 
     .hero {
         padding: 100px 60px;
+    }
+
+    .favorite {
+        margin: 100px 28px 100px 40px;
     }
 
     .about__title {
