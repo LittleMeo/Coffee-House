@@ -379,6 +379,10 @@ li {
         margin: 18px 7px 18px 20px;
     }
 
+    .hero {
+        margin: 0 25px 0 40px;
+    }
+
     .nav__list {
         display: none;
     }
