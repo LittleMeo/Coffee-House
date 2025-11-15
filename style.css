@@ -45,7 +45,7 @@ li {
     list-style: none;
 }
 
-.italic-text {
+.text--italic {
     font-style: italic;
     color: #B0907A;
 }
@@ -442,7 +442,7 @@ li {
         width: 320px;
     }
 
-    .favorite-container {
+    .favorite__container {
         margin: 100px 0;
     }
 
