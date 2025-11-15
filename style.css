@@ -452,7 +452,7 @@ li {
     }
 
     .header {
-        margin: 18px 14px;
+        margin: 18px 0px 18px 20px;
     }
 
     .nav {
@@ -461,12 +461,17 @@ li {
 
     .hero {
         padding: 60px 16px;
+        margin: 0px 0px 0px 16px
     }
 
     .hero__title {
         font-size: 42px;
         line-height: 115%;
         letter-spacing: 1.4px;
+    }
+
+    .favorite {
+        margin: 1px 3px 1px 16px;
     }
 
     .hero__container {
@@ -497,12 +502,16 @@ li {
     }
 
     .card__title {
-        line-height: 150%;
+        line-height: 140%;
     }
 
     .card__description {
-        line-height: 136%;
+        line-height: 130%;
         letter-spacing: 0px;
+    }
+
+    .card__price {
+        line-height: 135%;
     }
 
     .about__title {
