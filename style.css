@@ -375,6 +375,10 @@ li {
 }
 
 @media (max-width: 786px) {
+    .header {
+        margin: 18px 7px 18px 20px;
+    }
+
     .nav__list {
         display: none;
     }
