@@ -126,15 +126,17 @@ li {
     width: 16px;
     height: 1.5px;
     background-color: #403F3D;
+    position: relative;
 }
 
-.burger__line::after {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 1.5px;
-    background-color: #403F3D;
-    margin: 8px 0;
+.burger__line:nth-child(1) {
+    top: -4px;
+    left: 10px;
+}
+
+.burger__line:nth-child(2) {
+    top: 4px;
+    left: -5px;
 }
 
 .hero {
@@ -384,9 +386,26 @@ li {
     .nav__burger {
         display: flex;
         border: 1px solid #403F3D;
+        justify-content: center;
         align-items: center;
+        width: 44px;
+        height: 44px;
+        position: relative;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        margin: 10px 0 0 0;
+    }
+
+    .nav__burger::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
-        padding: 18px 14px;
+        border: 1px solid #403F3D;
     }
 
     .hero {
