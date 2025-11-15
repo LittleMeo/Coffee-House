@@ -373,15 +373,15 @@ li {
 }
 
 @media (max-width: 786px) {
-    .nav-list {
+    .nav__list {
         display: none;
     }
 
-    .nav-menu {
+    .nav__menu {
         display: none;
     }
 
-    .nav-burger {
+    .nav__burger {
         display: flex;
         border: 1px solid #403F3D;
         align-items: center;
@@ -432,13 +432,13 @@ li {
         padding: 60px 16px;
     }
 
-    .hero-title {
+    .hero__title {
         font-size: 42px;
         line-height: 115%;
         letter-spacing: 1.4px;
     }
 
-    .hero-container {
+    .hero__container {
         width: 320px;
     }
 
