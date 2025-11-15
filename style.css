@@ -143,7 +143,7 @@ li {
     border-radius: 40px;
 }
 
-.hero-container {
+.hero__container {
     width: 530px;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ li {
     align-items: flex-start;
 }
 
-.hero-title {
+.hero__title {
     font-family: Inter;
     font-size: 72px;
     font-weight: 600;
@@ -160,7 +160,7 @@ li {
     color: #E1D4C9;
 }
 
-.hero-subtitle {
+.hero__subtitle {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -169,7 +169,7 @@ li {
     letter-spacing: 0.08px;
 }
 
-.hero-button {
+.hero__button {
     background-color: #E1D4C9;
     padding: 20px;
 }
