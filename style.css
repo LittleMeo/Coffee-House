@@ -392,18 +392,21 @@ li {
 }
 
 .mobile__title {
-    font-size: 60px;
+    font-family: Inter;
+    font-size: 62px;
     font-weight: 600;
-    line-height: 125%;
-    width: 555px;
+    line-height: 121%;
+    width: 567px;
+    letter-spacing: 1.0px;
 }
 
 .mobile__subtitle {
+    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 135%;
     color: #403F3D;
-    width: 559px;
+    width: 611px;
 }
 
 .mobile-app__cta {
