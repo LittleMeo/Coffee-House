@@ -25,6 +25,7 @@ button {
     cursor: pointer;
     padding: 0;
     width: 200px;
+    height: 64px;
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
@@ -407,6 +408,36 @@ li {
 
 .mobile-app__cta {
     border: 1px solid #403F3D;
+    position: relative;
+}
+
+.mobile-app__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-app__ico {
+    position: absolute;
+    top: 13px;
+    left: 24px;
+}
+
+.mobile-app__title {
+    position: absolute;
+    top: 10px;
+    left: 64px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.mobile-app__description {
+    position: absolute;
+    bottom: 12px;
+    left: 63px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
 }
 
 @media (max-width: 786px) {
