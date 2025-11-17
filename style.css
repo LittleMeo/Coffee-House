@@ -609,4 +609,26 @@ li {
     .about__img-wrapper--big {
         width: 349px;
     }
+
+    .mobile-app {
+        margin: 100px 14px;
+    }
+
+    .mobile-app__buttons {
+        flex-direction: column;
+    }
+
+    .mobile__title {
+        font-size: 32px;
+        line-height: 115%;
+        width: 340px;
+    }
+
+    .mobile__subtitle {
+        width: 327px;
+    }
+
+    .mobile__img {
+        width: 348px;
+    }
 }
