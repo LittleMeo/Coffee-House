@@ -513,6 +513,23 @@ li {
     .about__img--small {
         display: none;
     }
+
+    .mobile__container {
+        display: block;
+    }
+
+    .mobile__title {
+        width: 636px;
+    }
+
+    .mobile__subtitle {
+        width: 706px;
+        line-height: 155%;
+    }
+
+    .mobile__img {
+        padding: 100px 0px 0px 29px;
+    }
 }
 
 @media (max-width: 400px) {
