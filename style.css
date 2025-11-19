@@ -452,11 +452,12 @@ li {
 .footer__contaiter {
     display: flex;
     align-items: center;
-    padding: 100px;
+    padding: 93px 368px 100px 100px;
+    justify-content: space-between;
 }
 
 .footer__offer {
-    width: 458px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -468,11 +469,12 @@ li {
     font-weight: 600;
     line-height: 125%;
     color: #E1D4C9;
+    letter-spacing: 2.12px;
 }
 
 .offer__icons {
     display: flex;
-    gap: 16px;
+    gap: 10px;
 }
 
 .offer__icon {
@@ -498,7 +500,7 @@ li {
 .contact-us__infos {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 19px;
 }
 
 .contact-us__info {
