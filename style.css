@@ -606,10 +606,10 @@ li {
     }
 
     .footer__contaiter {
-    padding: 100px 60px;
-    flex-direction: column;
-    gap: 100px;
-    align-items: normal;
+        padding: 100px 60px;
+        flex-direction: column;
+        gap: 100px;
+        align-items: normal;
     }
 
     .footer__offer {
@@ -696,7 +696,7 @@ li {
     }
 
     .mobile-app {
-        margin: 100px 14px;
+        margin: 90px 15px;
     }
 
     .mobile-app__buttons {
@@ -716,5 +716,24 @@ li {
     .mobile__img {
         width: 348px;
         padding: 38px 0px 0px 0px;
+    }
+
+    .footer__contaiter {
+        padding: 68px 16px;
+        gap: 40px;
+    }
+
+    .footer__offer {
+        width: 343px;
+    }
+
+    .offer__title {
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: 1.4px;
+    }
+
+    .offer__icons {
+        gap: 12px;
     }
 }
