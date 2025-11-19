@@ -600,6 +600,21 @@ li {
     .mobile__img {
         padding: 100px 0px 0px 29px;
     }
+
+    .footer {
+        margin: 0 24px 0px 40px;
+    }
+
+    .footer__contaiter {
+    padding: 100px 60px;
+    flex-direction: column;
+    gap: 100px;
+    align-items: normal;
+    }
+
+    .footer__offer {
+        gap: 36px;
+    }
 }
 
 @media (max-width: 400px) {
