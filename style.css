@@ -335,7 +335,6 @@ li {
 .about__img-column {
     display: flex;
     flex-direction: column;
-    width: 660px;
     gap: 40px;
 }
 
@@ -388,7 +387,7 @@ li {
 .mobile__offer {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 42px;
 }
 
 .mobile__title {
@@ -623,7 +622,7 @@ li {
     }
 
     .header {
-        margin: 18px 0px 18px 20px;
+        margin: 18px 16px;
     }
 
     .nav {
@@ -632,7 +631,7 @@ li {
 
     .hero {
         padding: 60px 16px;
-        margin: 0px 0px 0px 16px
+        margin: 0px 16px;
     }
 
     .hero__title {
@@ -642,7 +641,7 @@ li {
     }
 
     .favorite {
-        margin: 1px 3px 1px 16px;
+        margin: 0px 16px;
     }
 
     .hero__container {
@@ -696,7 +695,7 @@ li {
     }
 
     .mobile-app {
-        margin: 90px 15px;
+        margin: 102px 15px;
     }
 
     .mobile-app__buttons {
@@ -719,7 +718,7 @@ li {
     }
 
     .footer__contaiter {
-        padding: 68px 16px;
+        padding: 59px 16px;
         gap: 40px;
     }
 
