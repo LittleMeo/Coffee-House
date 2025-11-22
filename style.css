@@ -61,7 +61,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 19px;
+    gap: 22px;
 }
 
 .header {
@@ -194,7 +194,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 39px 0;
+    margin: 39.5px 0;
 }
 
 .favorite__border {
@@ -275,7 +275,6 @@ li {
     font-family: Inter;
     font-size: 24px;
     font-weight: 600;
-    line-height: 125%;
     color: #403F3D;
     letter-spacing: 0.36px;
 }
@@ -284,7 +283,6 @@ li {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%;
     color: #665F55;
     letter-spacing: 0.16px;
 }
@@ -293,7 +291,6 @@ li {
     font-family: Inter;
     font-size: 24px;
     font-weight: 600;
-    line-height: 125%;
     color: #403F3D;
 }
 
@@ -557,10 +554,6 @@ li {
     .hero {
         padding: 100px 60px;
         margin: 0 40px;
-    }
-
-    .favorite {
-        margin: 100px 28px 100px 40px;
     }
 
     .about__title {
