@@ -513,11 +513,14 @@ li {
     line-height: 150%;
 }
 
-@media (max-width: 786px) {
-    .hero {
-        margin: 0 25px 0 40px;
+@media (max-width: 666px) {
+    .hero__container {
+        width: 100%;
     }
+}
 
+
+@media (max-width: 786px) {
     .nav__list {
         display: none;
     }
@@ -553,6 +556,7 @@ li {
 
     .hero {
         padding: 100px 60px;
+        margin: 0 40px;
     }
 
     .favorite {
@@ -616,7 +620,7 @@ li {
     .header {
         margin: 18px 16px;
     }
-    
+
     .section {
         margin: 0 14px;
     }
@@ -627,7 +631,7 @@ li {
 
     .hero {
         padding: 60px 16px;
-        margin: 0px 16px;   
+        margin: 0px 16px;
     }
 
     .hero__title {
