@@ -516,6 +516,12 @@ li {
     line-height: 150%;
 }
 
+@media (max-width: 1310px) {
+    .mobile__container {
+        display: block;
+    }
+}
+
 @media (max-width: 786px) {
     .nav__list {
         display: none;
@@ -573,10 +579,6 @@ li {
 
     .about__img--small {
         display: none;
-    }
-
-    .mobile__container {
-        display: block;
     }
 
     .mobile__title {
