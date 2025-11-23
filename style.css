@@ -510,13 +510,6 @@ li {
     line-height: 150%;
 }
 
-@media (max-width: 666px) {
-    .hero__container {
-        width: 100%;
-    }
-}
-
-
 @media (max-width: 786px) {
     .nav__list {
         display: none;
@@ -609,6 +602,20 @@ li {
     }
 }
 
+@media (max-width: 666px) {
+    .hero__container {
+        width: 100%;
+    }
+
+    .favorite__border {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
 @media (max-width: 400px) {
     .header {
         margin: 18px 16px;
@@ -631,10 +638,6 @@ li {
         font-size: 42px;
         line-height: 115%;
         letter-spacing: 1.4px;
-    }
-
-    .favorite {
-        margin: 1px 3px 1px 16px;
     }
 
     .hero__container {
@@ -661,20 +664,21 @@ li {
     }
 
     .favorite__slider {
-        margin: 40px 0;
+        margin: 45px 0;
     }
 
-    .card__title {
-        line-height: 140%;
+    .card {
+        gap: 11px;
+    }
+
+    .card__text {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
     }
 
     .card__description {
-        line-height: 130%;
         letter-spacing: 0px;
-    }
-
-    .card__price {
-        line-height: 135%;
     }
 
     .about__title {
