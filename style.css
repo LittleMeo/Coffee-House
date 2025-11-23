@@ -379,7 +379,7 @@ li {
 }
 
 .mobile-app {
-    margin: 100px 40px;
+    margin: 98px 40px;
 }
 
 .mobile__container {
@@ -517,6 +517,10 @@ li {
 }
 
 @media (max-width: 1310px) {
+    .footer__offer {
+        width: 100%;
+    }
+
     .mobile__container {
         display: block;
     }
@@ -595,11 +599,11 @@ li {
     }
 
     .footer {
-        margin: 0 24px 0px 40px;
+        margin: 0 40px;
     }
 
     .footer__contaiter {
-        padding: 100px 60px;
+        padding: 103px 63px;
         flex-direction: column;
         gap: 100px;
         align-items: normal;
@@ -700,7 +704,7 @@ li {
     }
 
     .mobile-app {
-        margin: 90px 15px;
+        margin: 104px 15px;
     }
 
     .mobile-app__buttons {
@@ -723,7 +727,7 @@ li {
     }
 
     .footer__contaiter {
-        padding: 68px 16px;
+        padding: 53px 16px;
         gap: 40px;
     }
 
