@@ -271,6 +271,12 @@ li {
     width: 100%;
 }
 
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
 .card__title {
     font-family: Inter;
     font-size: 24px;
