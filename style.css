@@ -586,15 +586,15 @@ li {
     }
 
     .mobile__title {
-        width: 636px;
+        width: 100%;
     }
 
     .mobile__subtitle {
-        width: 706px;
-        line-height: 155%;
+        width: 100%;
     }
 
     .mobile__img {
+        width: 100%;
         padding: 100px 0px 0px 29px;
     }
 
