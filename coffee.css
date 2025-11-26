@@ -1,3 +1,7 @@
+.card {
+    gap: 0;
+}
+
 .nav__link {
         font-size: 18px;
 }
@@ -21,4 +25,15 @@
 .menu__title {
     font-family: Inter;
     font-size: 18px;
+}
+
+.menu__card {
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: start;
+}
+
+.card__text {
+    padding: 20px;
 }
