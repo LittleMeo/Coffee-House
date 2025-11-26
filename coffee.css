@@ -3,12 +3,11 @@
 }
 
 .nav__link {
-        font-size: 18px;
+    font-size: 18px;
 }
 
 .nav__menu {
     position: relative;
-    
 }
 
 .nav__menu::before {
@@ -22,13 +21,8 @@
     rotate: -90deg;
 }
 
-.menu__title {
-    font-family: Inter;
-    font-size: 18px;
-}
-
 .menu__card {
-    border: 1px solid #000;
+    border: 1px solid #C1B6AD;
     border-radius: 20px;
     overflow: hidden;
     text-align: start;
@@ -36,4 +30,61 @@
 
 .card__text {
     padding: 20px;
+}
+
+.card__img {
+    border-radius: 20px;
+}
+
+.menu {
+    margin: 0 40px 20px;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu__title {
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 600;
+    color: #403F3D;
+    width: 660px;
+    gap: 40px;
+    text-align: center;
+}
+
+.menu__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.menu__tab {
+    display: flex;
+    align-items: center;
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+    padding: 8px 16px 8px 8px;
+    gap: 8px;
+    color: #403F3D;
+}
+
+.menu__tab--active {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.tab__icon {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #C1B6AD
+}
+
+.tab__icon--active {
+    background-color: #E1D4C9;
 }

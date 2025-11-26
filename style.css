@@ -115,7 +115,9 @@ li {
     transition: 0.3s;
 }
 
-.menu__title {
+.nav__title {
+    font-family: Inter;
+    font-size: 18px;
     color: #403F3D;
 }
 
