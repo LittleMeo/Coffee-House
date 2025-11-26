@@ -37,7 +37,7 @@
 }
 
 .menu {
-    margin: 0 40px 20px;
+    margin: 0 40px;
 }
 
 .menu__header {
@@ -87,4 +87,14 @@
 
 .tab__icon--active {
     background-color: #E1D4C9;
+}
+
+.menu__grid {
+    display: flex;
+    gap: 40px;
+}
+
+.menu__grid-column {
+    display: flex;
+    gap: 40px;
 }
