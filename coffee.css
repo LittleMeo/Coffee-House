@@ -1,0 +1,24 @@
+.nav__link {
+        font-size: 18px;
+}
+
+.nav__menu {
+    position: relative;
+    
+}
+
+.nav__menu::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 71px;
+    top: 10px;
+    left: 50%;
+    background-color: #403F3D;
+    rotate: -90deg;
+}
+
+.menu__title {
+    font-family: Inter;
+    font-size: 18px;
+}
