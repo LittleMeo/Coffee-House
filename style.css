@@ -33,7 +33,9 @@ button {
     border-radius: 40px;
 }
 
-a {
+a,
+a:active 
+{
     text-decoration: none;
 }
 
@@ -88,7 +90,6 @@ li {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
-    line-height: 150%;
     color: #403F3D;
 }
 
@@ -112,6 +113,10 @@ li {
 .nav__menu:hover {
     text-decoration-line: underline;
     transition: 0.3s;
+}
+
+.menu__title {
+    color: #403F3D;
 }
 
 .menu__ico {
