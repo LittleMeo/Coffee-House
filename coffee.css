@@ -1,5 +1,10 @@
+.header {
+    margin: 16px 20px;
+}
+
 .card {
     gap: 0;
+    width: auto;
 }
 
 .nav__link {
@@ -21,19 +26,38 @@
     rotate: -90deg;
 }
 
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .menu__card {
     border: 1px solid #C1B6AD;
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
     text-align: start;
+    display: flex;
+    align-items: flex-start;
 }
 
 .card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 20px;
 }
 
 .card__img {
-    border-radius: 20px;
+    border-radius: 40px;
+}
+
+.card__description {
+    font-size: 18px;
+}
+
+.card__price {
+    font-size: 27px;
 }
 
 .menu {
@@ -44,17 +68,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 36px;
 }
 
 .menu__title {
     font-family: Inter;
-    font-size: 60px;
+    font-size: 68px;
     font-weight: 600;
     color: #403F3D;
-    width: 660px;
-    gap: 40px;
+    width: 860px;
     text-align: center;
+    letter-spacing: 0.79px;
 }
 
 .menu__tabs {
@@ -69,7 +93,7 @@
     align-items: center;
     border: 1px solid #C1B6AD;
     border-radius: 40px;
-    padding: 8px 16px 8px 8px;
+    padding: 8px 22px 8px 8px;
     gap: 8px;
     color: #403F3D;
 }
@@ -80,7 +104,7 @@
 }
 
 .tab__icon {
-    padding: 8px;
+    padding: 7px;
     border-radius: 50%;
     background-color: #C1B6AD
 }
@@ -89,12 +113,15 @@
     background-color: #E1D4C9;
 }
 
-.menu__grid {
-    display: flex;
-    gap: 40px;
+.tab__name {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.menu__grid-column {
-    display: flex;
+.menu__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: repeat(2, auto);
     gap: 40px;
 }
