@@ -40,8 +40,9 @@
 .card__text {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 20px;
+    gap: 16px;
+    padding: 20px 18px 18px;
+    height: 100%;
 }
 
 .card__img {
@@ -49,11 +50,12 @@
 }
 
 .card__description {
-    font-size: 18px;
+    line-height: 140%;
 }
 
 .card__price {
-    font-size: 27px;
+    margin-top: auto;
+    letter-spacing: 0.6px;
 }
 
 .menu {
