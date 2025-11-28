@@ -34,22 +34,35 @@
     overflow: hidden;
     text-align: start;
     display: flex;
-    align-items: flex-start;
+    align-items: start;
+    gap: 20px;
 }
 
 .card__text {
-    display: flex;
+     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 20px 18px 18px;
-    height: 100%;
+    padding: 0px 18px 18px;
+}
+
+.card__wrapper {
+    border-radius: 40px;
+    overflow: hidden;
+    width: 100%;
+        height: 310px;
+    position: relative;
 }
 
 .card__img {
-    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
 }
 
 .card__description {
+    height: 64.5px;
     line-height: 140%;
 }
 
