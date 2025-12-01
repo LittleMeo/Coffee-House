@@ -456,7 +456,7 @@ li {
 .footer {
     background-color: #665F55;
     margin: 0 40px 40px 40px;
-    border-radius: 36px;
+    border-radius: 40px;
 }
 
 .footer__contaiter {
@@ -520,7 +520,6 @@ li {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
-    line-height: 150%;
 }
 
 @media (max-width: 1310px) {

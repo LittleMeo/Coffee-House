@@ -145,6 +145,14 @@
     display: none;
 }
 
+.footer {
+    margin: 100px 40px 40px 40px;
+}
+
+.footer__contaiter {
+    padding: 100px 368px 100px 100px;
+}
+
 @media (max-width: 1400px) {
     .menu__container {
         align-items: center;
@@ -167,6 +175,14 @@
     }
 }
 
+@media (max-width: 1320px) {
+
+    .footer__contaiter {
+        padding: 100px 200px 80px 100px;
+    }
+
+}
+
 @media (max-width: 1050px) {
 
     .menu__card:nth-child(7) {
@@ -180,11 +196,32 @@
     .menu__grid {
         grid-template-columns: repeat(2, 310px);
     }
+
+    .footer__contaiter {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .offer__title {
+        width: auto;
+    }
 }
 
 @media (max-width: 786px) {
     .menu__title {
         width: auto;
+    }
+
+    .footer__contaiter {
+        padding: 102px 200px 106px 58px;
+    }
+
+    .footer__offer {
+        width: 500px;
+    }
+
+    .contact-us__infos {
+        gap: 25px;
     }
 }
 
