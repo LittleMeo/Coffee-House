@@ -135,7 +135,7 @@
     display: grid;
     grid-template-columns: repeat(4, 310px);
     grid-template-rows: repeat(2, auto);
-    gap: 40px;
+    gap: 42px;
 }
 
 .menu__refresh-btn {
@@ -185,5 +185,29 @@
 @media (max-width: 786px) {
     .menu__title {
         width: auto;
+    }
+}
+
+@media (max-width: 665px) {
+    .menu__grid {
+        grid-template-columns: repeat(1, 310px);
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        margin: 18px 17px;
+    }
+
+    .menu__title {
+        font-size: 32px;
+    }
+
+    .menu__tabs {
+        gap: 8px;
+    }
+
+    .card__text {
+        padding: 0px 18px 19px;
     }
 }
