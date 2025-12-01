@@ -1,10 +1,14 @@
-.nav__link {
-        font-size: 18px;
+.header {
+    margin: 16px 20px;
+}
+
+.card {
+    gap: 0;
+    width: auto;
 }
 
 .nav__menu {
     position: relative;
-    
 }
 
 .nav__menu::before {
@@ -18,7 +22,192 @@
     rotate: -90deg;
 }
 
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu__card {
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 18px 18px;
+}
+
+.card__wrapper {
+    border-radius: 40px;
+    overflow: hidden;
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+
+.card__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+
+.card__description {
+    height: 64.5px;
+    line-height: 140%;
+    overflow: overlay;
+}
+
+.card__price {
+    margin-top: auto;
+    letter-spacing: 0.6px;
+}
+
+.menu {
+    margin: 0 40px;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+}
+
 .menu__title {
     font-family: Inter;
-    font-size: 18px;
+    font-size: 62px;
+    font-weight: 600;
+    color: #403F3D;
+    width: 860px;
+    text-align: center;
+    letter-spacing: 0.79px;
+}
+
+.menu__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.menu__tab {
+    display: flex;
+    align-items: center;
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+    padding: 8px 16px 8px 8px;
+    gap: 8px;
+    color: #403F3D;
+}
+
+.menu__tab--active {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.tab__icon {
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #C1B6AD
+}
+
+.tab__icon--active {
+    background-color: #E1D4C9;
+}
+
+.tab__name {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: repeat(2, auto);
+    gap: 42px;
+}
+
+.menu__refresh-btn {
+    padding: 18px;
+    border: 1px solid #665F55;
+    border-radius: 50%;
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .menu__container {
+        align-items: center;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(3, 310px);
+    }
+
+    .menu__card:nth-child(5) {
+        display: none;
+    }
+
+    .menu__card:nth-child(6) {
+        display: none;
+    }
+
+    .menu__refresh-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .menu__card:nth-child(7) {
+        display: none;
+    }
+
+    .menu__card:nth-child(8) {
+        display: none;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(2, 310px);
+    }
+}
+
+@media (max-width: 786px) {
+    .menu__title {
+        width: auto;
+    }
+}
+
+@media (max-width: 665px) {
+    .menu__grid {
+        grid-template-columns: repeat(1, 310px);
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        margin: 18px 17px;
+    }
+
+    .menu__title {
+        font-size: 32px;
+    }
+
+    .menu__tabs {
+        gap: 8px;
+    }
+
+    .card__text {
+        padding: 0px 18px 19px;
+    }
 }
