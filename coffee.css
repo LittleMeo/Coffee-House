@@ -39,7 +39,7 @@
 }
 
 .card__text {
-     display: flex;
+    display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 0px 18px 18px;
@@ -49,7 +49,7 @@
     border-radius: 40px;
     overflow: hidden;
     width: 100%;
-        height: 310px;
+    height: 310px;
     position: relative;
 }
 
@@ -64,6 +64,7 @@
 .card__description {
     height: 64.5px;
     line-height: 140%;
+    overflow: overlay;
 }
 
 .card__price {
@@ -135,4 +136,54 @@
     grid-template-columns: repeat(4, 310px);
     grid-template-rows: repeat(2, auto);
     gap: 40px;
+}
+
+.menu__refresh-btn {
+    padding: 18px;
+    border: 1px solid #665F55;
+    border-radius: 50%;
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .menu__container {
+        align-items: center;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(3, 310px);
+    }
+
+    .menu__card:nth-child(5) {
+        display: none;
+    }
+
+    .menu__card:nth-child(6) {
+        display: none;
+    }
+
+    .menu__refresh-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .menu__card:nth-child(7) {
+        display: none;
+    }
+
+    .menu__card:nth-child(8) {
+        display: none;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(2, 310px);
+    }
+}
+
+@media (max-width: 786px) {
+    .menu__title {
+        width: auto;
+    }
 }
