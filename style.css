@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -19,23 +20,8 @@ body {
     margin: 0 auto;
 }
 
-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    width: 200px;
-    height: 64px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 150%;
-    background-color: transparent;
-    border-radius: 40px;
-}
-
 a,
-a:active 
-{
+a:active {
     text-decoration: none;
 }
 
@@ -51,6 +37,22 @@ li {
 .text--italic {
     font-style: italic;
     color: #B0907A;
+}
+
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    width: 200px;
+    height: 64px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #403F3D;
+    background-color: transparent;
+    border-radius: 40px;
 }
 
 .section {
@@ -182,6 +184,7 @@ li {
 .hero__button {
     background-color: #E1D4C9;
     padding: 20px;
+    text-align: center;
 }
 
 .favorite {
@@ -367,23 +370,37 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 40px;
 }
 
 .about__img-wrapper--big {
     width: 100%;
     height: 590px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 40px;
     position: relative;
+    cursor: pointer;
+}
+
+.about__img-wrapper--big:hover .about__img--big {
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: 0.3s;
 }
 
 .about__img-wrapper--small {
     width: 100%;
     height: 430px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 60px;
     position: relative;
+    cursor: pointer;
 }
+
+.about__img-wrapper--small:hover .about__img--small {
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: 0.3s;
+}
+
 
 .mobile-app {
     margin: 98px 40px;
@@ -511,6 +528,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 19px;
+    color: #E1D4C9
 }
 
 .contact-us__info {
@@ -520,6 +538,13 @@ li {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.info__time,
+.info__tel,
+.info__locate {
+    color: #E1D4C9;
 }
 
 @media (max-width: 1310px) {

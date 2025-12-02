@@ -9,6 +9,7 @@
 
 .nav__menu {
     position: relative;
+    pointer-events: none;
 }
 
 .nav__menu::before {
@@ -64,7 +65,8 @@
 .card__description {
     height: 64.5px;
     line-height: 140%;
-    overflow: overlay;
+    overflow: auto;
+    scrollbar-gutter: stable;
 }
 
 .card__price {

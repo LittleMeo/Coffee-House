@@ -8,9 +8,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coffee.css">
+    <link type="Image/x-icon" href="./assets/favicon/fav.ico" rel="icon">
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="coffee.css">
 
 <body>
     <header class="header">
@@ -19,10 +20,10 @@
                 <img class="nav__logo" src="./assets/ico/logo.svg" alt="coffee-logo">
             </a>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Favorite сoffee</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Mobile app</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+                <li class="nav__item"><a href="/index.html#favorite" class="nav__link">Favorite coffee</a></li>
+                <li class="nav__item"><a href="/index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="/index.html#mobile-app" class="nav__link">Mobile app</a></li>
+                <li class="nav__item"><a href="#footer" class="nav__link">Contact us</a></li>
             </ul>
             <div class="nav__menu">
                 <a href="./coffee.html" class="nav__title">Menu</a>
@@ -37,8 +38,8 @@
     <section class="menu section">
         <div class="menu__container">
             <div class="menu__header">
-                <h2 class="menu__title">Behind each of our cups hides an <span class="text--italic">amazing
-                        surprise</span></h2>
+                <h1 class="menu__title">Behind each of our cups hides an <span class="text--italic">amazing
+                        surprise</span></h1>
                 <div class="menu__tabs">
                     <div class="menu__tab menu__tab--active">
                         <img class="tab__icon tab__icon--active" src="./assets/ico/coffee-icon.png" alt="coffee-icon">
@@ -143,7 +144,7 @@
             <img class="menu__refresh-btn" src="./assets/ico/Ellipse.png" alt="refresh-btn">
         </div>
     </section>
-    <footer class="footer section">
+    <footer id="footer" class="footer section">
         <div class="footer__container">
             <div class="footer__offer">
                 <div class="offer__title">Sip, Savor, Smile. <span class="text--italic">It’s coffee time!</span></div>
@@ -158,11 +159,11 @@
                 <div class="contact-us__infos">
                     <div class="contact-us__info">
                         <img src="./assets/ico/locate.png" alt="locate-ico" class="info__ico">
-                        <div class="info__locate"><a>8558 Green Rd.,  LA</a></div>
+                        <a class="info__locate" href="https://maps.app.goo.gl/qaRUUebc4gtzNhtu9" target="_blank">8558 Green Rd., LA</a>
                     </div>
-                    <div class="contact-us__info"> 
+                    <div class="contact-us__info">
                         <img src="./assets/ico/tel.png" alt="tel-ico" class="info__ico">
-                        <div type="tel" class="info__tel">+1 (603) 555-0123</div>
+                        <a href="tel:+1(603)555-0123" class="info__tel">+1 (603) 555-0123</a>
                     </div>
                     <div class="contact-us__info">
                         <img src="./assets/ico/time.png" alt="time-ico" class="info__ico">
@@ -172,6 +173,7 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

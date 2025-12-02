@@ -8,8 +8,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
+    <link rel="stylesheet" href="style.css">
+    <link type="Image/x-icon" href="./assets/favicon/fav.ico" rel="icon">
 </head>
-<link rel="stylesheet" href="style.css">
 
 <body>
     <header class="header">
@@ -18,15 +19,15 @@
                 <img class="nav__logo" src="./assets/ico/logo.svg" alt="coffee-logo">
             </a>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Favorite coffee</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Mobile app</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+                <li class="nav__item"><a href="#favorite" class="nav__link">Favorite coffee</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#mobile-app" class="nav__link">Mobile app</a></li>
+                <li class="nav__item"><a href="#footer" class="nav__link">Contact us</a></li>
             </ul>
-            <div class="nav__menu">
-                <a href="./coffee.html" class="nav__title">Menu</a>
+            <a href="./coffee.html" class="nav__menu">
+                <div class="nav__title">Menu</div>
                 <img class="menu__ico" src="./assets/ico/coffee-cup.svg" alt="menu-ico">
-            </div>
+            </a>
             <div class="nav__burger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
@@ -39,10 +40,10 @@
             <h3 class="hero__subtitle">With its inviting atmosphere and delicious coffee options, the Coffee House
                 Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy
                 their favorite beverage.</h3>
-            <button class="hero__button button">Menu</button>
+            <a href="./coffee.html" class="hero__button button">Menu</a>
         </div>
     </section>
-    <section class="favorite section">
+    <section id="favorite" class="favorite section">
         <div class="favorite__container">
             <h2 class="favorite__title">Choose your <span class="text--italic">favorite</span> coffee</h2>
 
@@ -54,7 +55,8 @@
                     <img class="card__img" src="./assets/png/coffee-slider-1.png" alt="coffee1">
                     <div class="card__text">
                         <h3 class="card__title">S’mores Frappuccino</h3>
-                        <div class="card__description">This new drink takes an espresso and mixes it with brown sugar and
+                        <div class="card__description">This new drink takes an espresso and mixes it with brown sugar
+                            and
                             cinnamon before being topped with oat milk.</div>
                         <div class="card__price">$5.50</div>
                     </div>
@@ -71,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="about section">
+    <section id="about" class="about section">
         <div class="about__title">Resource is <span class="text--italic">the perfect and cozy place</span> where you can
             enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</div>
         <div class="about__container">
@@ -91,21 +93,23 @@
                     <img class="about__img about__img--big" src="./assets/png/about-4.png" alt="about-4">
                 </div>
             </div>
+        </div>
     </section>
-    <section class="mobile-app section">
+    <section id="mobile-app" class="mobile-app section">
         <div class="mobile__container">
             <div class="mobile__offer">
                 <h2 class="mobile__title"><span class="text--italic">Download</span> our apps to start ordering</h2>
-                <h3 class="mobile__subtitle">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</h3>
+                <h3 class="mobile__subtitle">Download the Resource app today and experience the comfort of ordering your
+                    favorite coffee from wherever you are</h3>
                 <div class="mobile-app__buttons">
                     <button class="mobile-app__cta button">
                         <img class="mobile-app__ico" src="./assets/ico/apple-store-ico.png" alt="apple-store-ico">
-                        <div class="mobile-app__title">Available on the</div>
-                        <div class="mobile-app__description">App Store</div>
+                        <span class="mobile-app__title">Available on the</span>
+                        <span class="mobile-app__description">App Store</span>
                     </button>
                     <button class="mobile-app__cta button">
-                        <div class="mobile-app__title">Available on</div>
-                        <div class="mobile-app__description">Google Play</div>
+                        <span class="mobile-app__title">Available on</span>
+                        <span class="mobile-app__description">Google Play</span>
                         <img class="mobile-app__ico" src="./assets/ico/google-play-ico.png" alt="google-play-ico">
                     </button>
                 </div>
@@ -113,7 +117,7 @@
             <img src="./assets/png/mobile-screens.png" class="mobile__img" alt="mobile-screens">
         </div>
     </section>
-    <footer class="footer section">
+    <footer id="footer" class="footer section">
         <div class="footer__container">
             <div class="footer__offer">
                 <div class="offer__title">Sip, Savor, Smile. <span class="text--italic">It’s coffee time!</span></div>
@@ -128,11 +132,11 @@
                 <div class="contact-us__infos">
                     <div class="contact-us__info">
                         <img src="./assets/ico/locate.png" alt="locate-ico" class="info__ico">
-                        <div class="info__locate"><a>8558 Green Rd.,  LA</a></div>
+                        <a class="info__locate" href="https://maps.app.goo.gl/qaRUUebc4gtzNhtu9" target="_blank">8558 Green Rd., LA</a>
                     </div>
-                    <div class="contact-us__info"> 
+                    <div class="contact-us__info">
                         <img src="./assets/ico/tel.png" alt="tel-ico" class="info__ico">
-                        <div type="tel" class="info__tel">+1 (603) 555-0123</div>
+                        <a href="tel:+1(603)555-0123" class="info__tel">+1 (603) 555-0123</a>
                     </div>
                     <div class="contact-us__info">
                         <img src="./assets/ico/time.png" alt="time-ico" class="info__ico">
@@ -142,7 +146,7 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 
 </html>
