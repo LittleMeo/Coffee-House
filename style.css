@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -34,8 +35,7 @@ button {
 }
 
 a,
-a:active 
-{
+a:active {
     text-decoration: none;
 }
 
