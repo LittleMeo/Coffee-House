@@ -64,7 +64,8 @@
 .card__description {
     height: 64.5px;
     line-height: 140%;
-    overflow: overlay;
+    overflow: auto;
+    scrollbar-gutter: stable;
 }
 
 .card__price {
