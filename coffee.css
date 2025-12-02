@@ -9,6 +9,7 @@
 
 .nav__menu {
     position: relative;
+    pointer-events: none;
 }
 
 .nav__menu::before {
