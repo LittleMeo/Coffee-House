@@ -526,7 +526,9 @@ li {
     font-weight: 600;
 }
 
-.info__time {
+.info__time,
+.info__tel,
+.info__locate {
     color: #E1D4C9;
 }
 
