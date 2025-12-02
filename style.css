@@ -20,20 +20,6 @@ body {
     margin: 0 auto;
 }
 
-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    width: 200px;
-    height: 64px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 150%;
-    background-color: transparent;
-    border-radius: 40px;
-}
-
 a,
 a:active {
     text-decoration: none;
@@ -51,6 +37,22 @@ li {
 .text--italic {
     font-style: italic;
     color: #B0907A;
+}
+
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    width: 200px;
+    height: 64px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #403F3D;
+    background-color: transparent;
+    border-radius: 40px;
 }
 
 .section {
@@ -182,6 +184,7 @@ li {
 .hero__button {
     background-color: #E1D4C9;
     padding: 20px;
+    text-align: center;
 }
 
 .favorite {
