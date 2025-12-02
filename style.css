@@ -370,23 +370,37 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 40px;
 }
 
 .about__img-wrapper--big {
     width: 100%;
     height: 590px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 40px;
     position: relative;
+    cursor: pointer;
+}
+
+.about__img-wrapper--big:hover .about__img--big {
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: 0.3s;
 }
 
 .about__img-wrapper--small {
     width: 100%;
     height: 430px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 60px;
     position: relative;
+    cursor: pointer;
 }
+
+.about__img-wrapper--small:hover .about__img--small {
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: 0.3s;
+}
+
 
 .mobile-app {
     margin: 98px 40px;
