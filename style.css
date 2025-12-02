@@ -514,6 +514,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 19px;
+    color: #E1D4C9
 }
 
 .contact-us__info {
@@ -523,6 +524,10 @@ li {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
+}
+
+.info__time {
+    color: #E1D4C9;
 }
 
 @media (max-width: 1310px) {
