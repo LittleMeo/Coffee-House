@@ -34,6 +34,14 @@ li {
     list-style: none;
 }
 
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
 .text--italic {
     font-style: italic;
     color: #B0907A;
@@ -215,7 +223,7 @@ li {
 }
 
 .favorite {
-    margin: 100px 40px;
+    margin: 100px 44px;
 }
 
 .favorite__title {
@@ -311,7 +319,7 @@ li {
 .card__text {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 17px;
 }
 
 .card__title {
@@ -327,7 +335,8 @@ li {
     font-size: 16px;
     font-weight: 400;
     color: #665F55;
-    letter-spacing: 0.16px;
+    letter-spacing: 0.1px;
+    line-height: 150%;
 }
 
 .card__price {
@@ -335,6 +344,7 @@ li {
     font-size: 24px;
     font-weight: 600;
     color: #403F3D;
+    letter-spacing: 0.5px;
 }
 
 .favorite__controls {
