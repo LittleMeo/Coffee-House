@@ -239,7 +239,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 39.5px 0;
+    margin: 40px 0;
 }
 
 .favorite__border {
@@ -256,60 +256,68 @@ button {
 
 .favorite__btn--prev {
     position: relative;
-    width: 16px;
+    width: 14px;
     height: 1px;
     background-color: #403F3D;
+    border-radius: 40px;
+    margin: 2px 0 0 0;
 }
 
 .favorite__btn--prev::before {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    left: 3px;
+    right: 9px;
     transform: rotate(45deg);
     background-color: #403F3D;
     bottom: -1px;
+    border-radius: 40px;
 }
 
 .favorite__btn--prev::after {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    left: 3px;
+    right: 9px;
     transform: rotate(-45deg);
     background-color: #403F3D;
     top: -1px;
+    border-radius: 40px;
 }
 
 .favorite__btn--next {
     position: relative;
-    width: 16px;
+    width: 14px;
     height: 1px;
     background-color: #403F3D;
+    border-radius: 40px;
+    margin: 2px 0 0 0;
 }
 
 .favorite__btn--next::before {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    right: 3px;
+    right: 2px;
     transform: rotate(-45deg);
     background-color: #403F3D;
     bottom: -1px;
+    border-radius: 40px;
 }
 
 .favorite__btn--next::after {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    right: 3px;
+    right: 2px;
     transform: rotate(45deg);
     background-color: #403F3D;
     top: -1px;
+    border-radius: 40px;
 }
 
 .card__img {
