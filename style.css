@@ -119,7 +119,7 @@ li {
 
 .nav__title {
     font-family: Inter;
-    font-size: 18px;
+    font-size: 16px;
     color: #403F3D;
 }
 
@@ -184,7 +184,19 @@ li {
 .hero__button {
     background-color: #E1D4C9;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.hero__ico {
+    margin: 2px 0;
+    display: none;
+}
+
+.hero__button:hover .hero__ico {
+    display: block;
+    transition: 0.3s;
 }
 
 .favorite {
