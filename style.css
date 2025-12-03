@@ -448,7 +448,7 @@ button {
 
 
 .mobile-app {
-    margin: 98px 40px;
+    margin: 100px 40px;
 }
 
 .mobile__container {
@@ -476,9 +476,10 @@ button {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 135%;
+    line-height: 150%;
     color: #403F3D;
     width: 611px;
+    letter-spacing: 0.03px;
 }
 
 .mobile-app__cta {
@@ -493,13 +494,13 @@ button {
 
 .mobile-app__ico {
     position: absolute;
-    top: 13px;
-    left: 24px;
+    top: 16px;
+    left: 23px;
 }
 
 .mobile-app__title {
     position: absolute;
-    top: 10px;
+    top: 11px;
     left: 64px;
     font-size: 10px;
     font-weight: 600;
@@ -508,8 +509,8 @@ button {
 
 .mobile-app__description {
     position: absolute;
-    bottom: 12px;
-    left: 63px;
+    bottom: 11px;
+    left: 64px;
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
