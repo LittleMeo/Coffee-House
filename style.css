@@ -264,7 +264,8 @@ button {
     transition: 0.3s;
 }
 
-.favorite__border:hover .favorite__btn--prev::before, .favorite__border:hover .favorite__btn--prev::after {
+.favorite__border:hover .favorite__btn--prev::before,
+.favorite__border:hover .favorite__btn--prev::after {
     background-color: white;
     transition: 0.3s;
 }
@@ -340,7 +341,8 @@ button {
     transition: 0.3s;
 }
 
-.favorite__border:hover .favorite__btn--next::before, .favorite__border:hover .favorite__btn--next::after {
+.favorite__border:hover .favorite__btn--next::before,
+.favorite__border:hover .favorite__btn--next::after {
     background-color: white;
     transition: 0.3s;
 }
@@ -512,6 +514,25 @@ button {
     position: relative;
 }
 
+.mobile-app__cta:hover {
+    background-color: #403F3D;
+    transition: 0.3s;
+}
+
+.mobile-app__cta:hover .mobile-app__title,
+.mobile-app__cta:hover .mobile-app__description
+{
+    fill: currentColor;
+    stroke: currentColor;
+    color: #E1D4C9;
+}
+
+.mobile-app__cta:hover .mobile-app__ico path {
+    fill: currentColor;
+    stroke: currentColor;
+    color: #E1D4C9;
+}
+
 .mobile-app__buttons {
     display: flex;
     gap: 20px;
@@ -521,6 +542,8 @@ button {
     position: absolute;
     top: 16px;
     left: 23px;
+    color: #403F3D;
+
 }
 
 .mobile-app__title {
@@ -539,6 +562,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
+    color: #403F3D;
 }
 
 .footer {
@@ -580,8 +604,8 @@ button {
     padding: 18px;
     border-radius: 50%;
     color: #C1B6AD;
-    fill:currentColor;
-    stroke:currentColor;
+    fill: currentColor;
+    stroke: currentColor;
 }
 
 .offer__icon:hover {
