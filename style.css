@@ -525,12 +525,14 @@ button {
     fill: currentColor;
     stroke: currentColor;
     color: #E1D4C9;
+    transition: 0.3s;
 }
 
 .mobile-app__cta:hover .mobile-app__ico path {
     fill: currentColor;
     stroke: currentColor;
     color: #E1D4C9;
+    transition: 0.3s;
 }
 
 .mobile-app__buttons {
