@@ -1,7 +1,3 @@
-.header {
-    margin: 16px 20px;
-}
-
 .card {
     gap: 0;
     width: auto;
@@ -39,6 +35,12 @@
     gap: 20px;
 }
 
+.menu__card:hover .card__img {
+    transform: translate(-50%, -50%) scale(0.9);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .card__text {
     display: flex;
     flex-direction: column;
@@ -65,8 +67,7 @@
 .card__description {
     height: 64.5px;
     line-height: 140%;
-    overflow: auto;
-    scrollbar-gutter: stable;
+    overflow: overlay;
 }
 
 .card__price {
@@ -82,7 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 43px;
+    gap: 40px;
 }
 
 .menu__title {
@@ -99,7 +100,6 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-    cursor: pointer;
 }
 
 .menu__tab {
@@ -115,6 +115,19 @@
 .menu__tab--active {
     background-color: #665F55;
     color: #E1D4C9;
+    pointer-events: none;
+}
+
+.menu__tab:hover {
+    cursor: pointer;
+    background-color: #665F55;
+    color: #E1D4C9;
+    transition: 0.3s;
+}
+
+.menu__tab:hover .tab__icon {
+    background-color: #E1D4C9;
+    transition: 0.3s;
 }
 
 .tab__icon {
@@ -137,7 +150,7 @@
     display: grid;
     grid-template-columns: repeat(4, 310px);
     grid-template-rows: repeat(2, auto);
-    gap: 42px;
+    gap: 40px;
 }
 
 .menu__refresh-btn {

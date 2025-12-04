@@ -34,6 +34,14 @@ li {
     list-style: none;
 }
 
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
 .text--italic {
     font-style: italic;
     color: #B0907A;
@@ -69,13 +77,12 @@ li {
 }
 
 .header {
-    margin: 18px 20px;
+    margin: 18px 40px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
 }
 
 .nav__logo {
@@ -85,7 +92,8 @@ li {
 .nav__list {
     align-items: center;
     display: flex;
-    gap: 40px;
+    gap: 42px;
+    margin: 0 0 4px;
 }
 
 .nav__link {
@@ -93,10 +101,17 @@ li {
     font-size: 16px;
     font-weight: 600;
     color: #403F3D;
+    position: relative;
 }
 
-.nav__link:hover {
-    text-decoration-line: underline;
+.nav__link:hover::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #403F3D;
     transition: 0.3s;
 }
 
@@ -110,21 +125,29 @@ li {
     line-height: 150%;
     color: #403F3D;
     cursor: pointer;
+    position: relative;
 }
 
-.nav__menu:hover {
-    text-decoration-line: underline;
+.nav__menu:hover::before {
+    position: absolute;
+    content: "";
+    bottom: 17px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #403F3D;
     transition: 0.3s;
 }
 
 .nav__title {
     font-family: Inter;
-    font-size: 18px;
+    font-size: 16px;
     color: #403F3D;
+    margin: 0 0 4px;
 }
 
 .menu__ico {
-    margin: 0px 0 5px 0;
+    margin: 0px 0 8px 0;
 }
 
 .nav__burger {
@@ -184,11 +207,23 @@ li {
 .hero__button {
     background-color: #E1D4C9;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.hero__ico {
+    margin: 2px 0;
+    display: none;
+}
+
+.hero__button:hover .hero__ico {
+    display: block;
+    transition: 0.3s;
 }
 
 .favorite {
-    margin: 100px 40px;
+    margin: 100px 44px;
 }
 
 .favorite__title {
@@ -204,7 +239,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 39.5px 0;
+    margin: 40px 0;
 }
 
 .favorite__border {
@@ -219,62 +254,97 @@ li {
     cursor: pointer;
 }
 
+.favorite__border:hover {
+    background-color: #665F55;
+    transition: 0.3s;
+}
+
+.favorite__border:hover .favorite__btn--prev {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.favorite__border:hover .favorite__btn--prev::before,
+.favorite__border:hover .favorite__btn--prev::after {
+    background-color: white;
+    transition: 0.3s;
+}
+
 .favorite__btn--prev {
     position: relative;
-    width: 16px;
+    width: 14px;
     height: 1px;
     background-color: #403F3D;
+    border-radius: 40px;
+    margin: 2px 0 0 0;
 }
 
 .favorite__btn--prev::before {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    left: 3px;
+    right: 9px;
     transform: rotate(45deg);
     background-color: #403F3D;
     bottom: -1px;
+    border-radius: 40px;
 }
 
 .favorite__btn--prev::after {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    left: 3px;
+    right: 9px;
     transform: rotate(-45deg);
     background-color: #403F3D;
     top: -1px;
+    border-radius: 40px;
 }
 
 .favorite__btn--next {
     position: relative;
-    width: 16px;
+    width: 14px;
     height: 1px;
     background-color: #403F3D;
+    border-radius: 40px;
+    margin: 2px 0 0 0;
 }
 
 .favorite__btn--next::before {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    right: 3px;
+    right: 2px;
     transform: rotate(-45deg);
     background-color: #403F3D;
     bottom: -1px;
+    border-radius: 40px;
 }
 
 .favorite__btn--next::after {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 9px;
     width: 1px;
-    right: 3px;
+    right: 2px;
     transform: rotate(45deg);
     background-color: #403F3D;
     top: -1px;
+    border-radius: 40px;
+}
+
+.favorite__border:hover .favorite__btn--next {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.favorite__border:hover .favorite__btn--next::before,
+.favorite__border:hover .favorite__btn--next::after {
+    background-color: white;
+    transition: 0.3s;
 }
 
 .card__img {
@@ -284,7 +354,7 @@ li {
 .card__text {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 17px;
 }
 
 .card__title {
@@ -300,7 +370,8 @@ li {
     font-size: 16px;
     font-weight: 400;
     color: #665F55;
-    letter-spacing: 0.16px;
+    letter-spacing: 0.1px;
+    line-height: 150%;
 }
 
 .card__price {
@@ -308,6 +379,7 @@ li {
     font-size: 24px;
     font-weight: 600;
     color: #403F3D;
+    letter-spacing: 0.5px;
 }
 
 .favorite__controls {
@@ -377,7 +449,7 @@ li {
     width: 100%;
     height: 590px;
     overflow: hidden;
-    border-radius: 40px;
+    border-radius: 20px;
     position: relative;
     cursor: pointer;
 }
@@ -391,7 +463,7 @@ li {
     width: 100%;
     height: 430px;
     overflow: hidden;
-    border-radius: 60px;
+    border-radius: 20px;
     position: relative;
     cursor: pointer;
 }
@@ -403,7 +475,7 @@ li {
 
 
 .mobile-app {
-    margin: 98px 40px;
+    margin: 100px 40px;
 }
 
 .mobile__container {
@@ -431,14 +503,36 @@ li {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 135%;
+    line-height: 150%;
     color: #403F3D;
     width: 611px;
+    letter-spacing: 0.03px;
 }
 
 .mobile-app__cta {
     border: 1px solid #403F3D;
     position: relative;
+}
+
+.mobile-app__cta:hover {
+    background-color: #403F3D;
+    transition: 0.3s;
+}
+
+.mobile-app__cta:hover .mobile-app__title,
+.mobile-app__cta:hover .mobile-app__description
+{
+    fill: currentColor;
+    stroke: currentColor;
+    color: #E1D4C9;
+    transition: 0.3s;
+}
+
+.mobile-app__cta:hover .mobile-app__ico path {
+    fill: currentColor;
+    stroke: currentColor;
+    color: #E1D4C9;
+    transition: 0.3s;
 }
 
 .mobile-app__buttons {
@@ -448,13 +542,15 @@ li {
 
 .mobile-app__ico {
     position: absolute;
-    top: 13px;
-    left: 24px;
+    top: 16px;
+    left: 23px;
+    color: #403F3D;
+
 }
 
 .mobile-app__title {
     position: absolute;
-    top: 10px;
+    top: 11px;
     left: 64px;
     font-size: 10px;
     font-weight: 600;
@@ -463,11 +559,12 @@ li {
 
 .mobile-app__description {
     position: absolute;
-    bottom: 12px;
-    left: 63px;
+    bottom: 11px;
+    left: 64px;
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
+    color: #403F3D;
 }
 
 .footer {
@@ -479,7 +576,7 @@ li {
 .footer__container {
     display: flex;
     align-items: center;
-    padding: 93px 368px 100px 100px;
+    padding: 98px 368px 100px 100px;
     justify-content: space-between;
 }
 
@@ -508,6 +605,16 @@ li {
     border: 1px solid #C1B6AD;
     padding: 18px;
     border-radius: 50%;
+    color: #C1B6AD;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.offer__icon:hover {
+    background-color: #E1D4C9;
+    border: #E1D4C9;
+    color: #403F3D;
+    transition: 0.3s;
 }
 
 .footer__contact-us {
@@ -527,7 +634,7 @@ li {
 .contact-us__infos {
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 24px;
     color: #E1D4C9
 }
 
@@ -539,6 +646,33 @@ li {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    position: relative;
+}
+
+.contact-us__info:nth-child(3) {
+    pointer-events: none;
+}
+
+.contact-us__info:hover::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #E1D4C9;
+    transition: 0.3s;
+}
+
+.contact-us__info::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #665F55;
+    transition: 0.3s;
 }
 
 .info__time,
