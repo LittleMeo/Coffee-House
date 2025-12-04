@@ -35,6 +35,12 @@
     gap: 20px;
 }
 
+.menu__card:hover .card__img {
+    transform: translate(-50%, -50%) scale(0.9);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .card__text {
     display: flex;
     flex-direction: column;
