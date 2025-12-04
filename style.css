@@ -649,6 +649,10 @@ button {
     position: relative;
 }
 
+.contact-us__info:nth-child(3) {
+    pointer-events: none;
+}
+
 .contact-us__info:hover::before {
     position: absolute;
     content: "";
