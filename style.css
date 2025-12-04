@@ -254,6 +254,21 @@ button {
     cursor: pointer;
 }
 
+.favorite__border:hover {
+    background-color: #665F55;
+    transition: 0.3s;
+}
+
+.favorite__border:hover .favorite__btn--prev {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.favorite__border:hover .favorite__btn--prev::before, .favorite__border:hover .favorite__btn--prev::after {
+    background-color: white;
+    transition: 0.3s;
+}
+
 .favorite__btn--prev {
     position: relative;
     width: 14px;
@@ -318,6 +333,16 @@ button {
     background-color: #403F3D;
     top: -1px;
     border-radius: 40px;
+}
+
+.favorite__border:hover .favorite__btn--next {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.favorite__border:hover .favorite__btn--next::before, .favorite__border:hover .favorite__btn--next::after {
+    background-color: white;
+    transition: 0.3s;
 }
 
 .card__img {
