@@ -61,8 +61,7 @@
 .card__description {
     height: 64.5px;
     line-height: 140%;
-    overflow: auto;
-    scrollbar-gutter: stable;
+    overflow: overlay;
 }
 
 .card__price {
@@ -133,7 +132,7 @@
     display: grid;
     grid-template-columns: repeat(4, 310px);
     grid-template-rows: repeat(2, auto);
-    gap: 42px;
+    gap: 40px;
 }
 
 .menu__refresh-btn {
