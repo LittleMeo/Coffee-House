@@ -94,7 +94,6 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-    cursor: pointer;
 }
 
 .menu__tab {
@@ -110,6 +109,19 @@
 .menu__tab--active {
     background-color: #665F55;
     color: #E1D4C9;
+    pointer-events: none;
+}
+
+.menu__tab:hover {
+    cursor: pointer;
+    background-color: #665F55;
+    color: #E1D4C9;
+    transition: 0.3s;
+}
+
+.menu__tab:hover .tab__icon {
+    background-color: #E1D4C9;
+    transition: 0.3s;
 }
 
 .tab__icon {
