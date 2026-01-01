@@ -87,6 +87,8 @@ button {
 
 .nav__logo {
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .nav__list {
@@ -152,7 +154,6 @@ button {
 
 .nav__burger {
     display: none;
-    cursor: pointer;
 }
 
 .burger__line {
@@ -177,6 +178,7 @@ button {
     background-color: #E1D4C9;
     width: 100vw;
     height: 100vh;
+    z-index: 1;
 }
 
 .burger__list {
@@ -185,6 +187,7 @@ button {
     align-items: center;
     justify-content: center;
     height: 100%;
+    gap: 40px;
 }
 
 .hero {
@@ -727,6 +730,9 @@ button {
         background-color: transparent;
         border: none;
         margin: 10px 0 0 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
     }
 
     .nav__burger::before {
