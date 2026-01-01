@@ -172,6 +172,21 @@ button {
     left: -5px;
 }
 
+.burger__menu {
+    position: absolute;
+    background-color: #E1D4C9;
+    width: 100vw;
+    height: 100vh;
+}
+
+.burger__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .hero {
     background-image: url('./assets/png/img-hero.png');
     padding: 100px;
