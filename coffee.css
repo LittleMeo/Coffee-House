@@ -35,12 +35,6 @@
     gap: 20px;
 }
 
-.menu__card:hover .card__img {
-    transform: translate(-50%, -50%) scale(0.9);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 .card__text {
     display: flex;
     flex-direction: column;
@@ -118,18 +112,6 @@
     pointer-events: none;
 }
 
-.menu__tab:hover {
-    cursor: pointer;
-    background-color: #665F55;
-    color: #E1D4C9;
-    transition: 0.3s;
-}
-
-.menu__tab:hover .tab__icon {
-    background-color: #E1D4C9;
-    transition: 0.3s;
-}
-
 .tab__icon {
     padding: 7px;
     border-radius: 50%;
@@ -166,6 +148,26 @@
 
 .footer__container {
     padding: 100px 368px 100px 100px;
+}
+
+@media (hover: hover) {
+    .menu__card:hover .card__img {
+        transform: translate(-50%, -50%) scale(0.9);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menu__tab:hover {
+        cursor: pointer;
+        background-color: #665F55;
+        color: #E1D4C9;
+        transition: 0.3s;
+    }
+
+    .menu__tab:hover .tab__icon {
+        background-color: #E1D4C9;
+        transition: 0.3s;
+    }
 }
 
 @media (max-width: 1400px) {
