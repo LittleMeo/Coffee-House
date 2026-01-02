@@ -98,6 +98,10 @@ button {
   margin: 0 0 4px;
 }
 
+.nav__item {
+  transition: 0.3s;
+}
+
 .nav__link {
   font-family: Inter;
   font-size: 16px;
