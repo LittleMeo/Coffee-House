@@ -174,7 +174,8 @@ button {
 }
 
 .burger__menu {
-    position: absolute;
+    display: none;
+    position: fixed;
     background-color: #E1D4C9;
     width: 100vw;
     height: 100vh;
@@ -744,6 +745,11 @@ button {
         height: 100%;
         border-radius: 50%;
         border: 1px solid #403F3D;
+    }
+
+    .burger__menu {
+        display: block;
+        left: 790px;
     }
 
     .hero {
