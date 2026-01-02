@@ -749,6 +749,10 @@ button {
     left: 790px;
   }
 
+  .burger__menu--active {
+    left: 0;
+  }
+
   .hero {
     padding: 100px 60px;
     margin: 0 40px;
