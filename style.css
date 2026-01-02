@@ -747,10 +747,12 @@ button {
   .burger__menu {
     display: block;
     left: 790px;
+    transition: 0.3s;
   }
 
   .burger__menu--active {
     left: 0;
+    transition: 0.3s;
   }
 
   .hero {
