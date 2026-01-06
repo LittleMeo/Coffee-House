@@ -535,8 +535,8 @@ button {
     border: #E1D4C9;
 }
 
-.offer__icon:hover .offer__svg {
-    fill: black;
+.offer__icon:hover .offer__svg path {
+    stroke: #403F3D;
 }
 
 .offer__svg {
