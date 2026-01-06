@@ -530,6 +530,15 @@ button {
     stroke: currentColor;
 }
 
+.offer__icon:hover {
+    fill: #E1D4C9;
+    border: #E1D4C9;
+}
+
+.offer__icon:hover .offer__svg {
+    fill: black;
+}
+
 .offer__svg {
     position: absolute;
     top: 18px;
