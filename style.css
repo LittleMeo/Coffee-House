@@ -494,7 +494,7 @@ button {
 .footer__container {
     display: flex;
     align-items: center;
-    padding: 98px 368px 100px 100px;
+    padding: 95px 365px 100px 100px;
     justify-content: space-between;
 }
 
@@ -520,12 +520,20 @@ button {
 }
 
 .offer__icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
     border: 1px solid #C1B6AD;
-    padding: 18px;
     border-radius: 50%;
     color: #C1B6AD;
     fill: currentColor;
     stroke: currentColor;
+}
+
+.offer__svg {
+    position: absolute;
+    top: 18px;
+    left: 18px;
 }
 
 .footer__contact-us {
